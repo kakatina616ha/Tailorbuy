@@ -1,0 +1,155 @@
+*
+{
+    font-family: "Roboto",sans-serif;
+}
+
+.title{
+    text-align: center;
+    margin: 40px auto30px;
+}
+
+
+.flip-card{
+    width: 300px;
+    height: 450px;
+    margin: auto;
+
+}
+
+
+.flip-card-back{
+    background-color: lightblue;
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back .back-header{
+    height: 45%;
+    text-align: center;
+}
+
+.flip-card-front img{
+    width: 70%;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.flip-card-back .back-header img{
+    width: 50%;
+    margin-top: 20px;
+}
+
+
+.flip-card-inner{
+    position: relative;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+
+.flip-card-back, .flip-card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+
+
+.flip-card-back .back-footer{
+    height: 15%;
+    padding: 15px 10px;
+}
+
+
+
+.back-footer a{
+    text-decoration: none;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 30px;
+    transition: 0.7s;
+
+
+}
+
+.back-footer a:hover{
+    background: #000000;
+    border: 1px solid;
+}
+
+
+
+.quick-link{
+    left: 0;
+    bottom: 0; 
+    position: absolute;
+    background: linear-gradient(to right, #db1bf6, #19d7f8);
+
+}
+
+
+
+.quick-link ul{
+    display: inline-flex;
+    margin: 20px auto;
+    text-align: center;
+    background: linear-gradient(to right, #db1bf6, #19d7f8);
+}
+
+.quick-link ul li{
+    list-style: none;
+    margin: 0 50px;
+    cursor: pointer;
+ 
+
+
+}
+
+.quick-link ul li .fa{
+    font-size: 25px;
+    color: #fff;
+
+}
+
+.quick-link ul li p{
+    margin-top: 15px;
+    font-size: 10px;
+    color: #fff;
+
+}
+
+.social-icons{
+    right: 72px;
+    bottom: 35px;
+    position: absolute;
+
+}
+
+.social-icons ul li{
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.social-icons ul li a{
+
+    color:#999;
+    border-radius: 40%;
+    border: 1px solid #999;
+    padding: 5px;
+    display: block;;
+
+
+}
